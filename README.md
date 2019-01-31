@@ -2,9 +2,9 @@
 基于axios封装了一下http请求
 
 1. master-fix分支上写的是通用请求格式
-    export default async(url:any, params:any = {}, method = 'POST', isUpload = false) =>{...}
+		export default async(url:any, params:any = {}, method = 'POST', isUpload = false) =>{...}
 2. dev分支上是定制版的请求格式
-    export default async(params:any = {} , method = 'POST', isUpload = false) =>{...}
+		export default async(params:any = {} , method = 'POST', isUpload = false) =>{...}
     因为该项目请求url是一样的，后台根据params里的key去判断该请求消息的作用
     ```
      {"com.syscxp.account.header.identity.APILogInByAccountMsg":{
@@ -15,4 +15,3 @@
           "imageUuid":"2eb6eeaccd374a509e40bfbd483a8402"
       }}
       ```
-
